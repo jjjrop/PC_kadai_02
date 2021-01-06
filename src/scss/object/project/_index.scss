@@ -1,0 +1,73 @@
+.p-index__mainImage {
+  width: 800px;
+  display: block;
+}
+
+.p-index__mainList {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 800px;
+  margin-top: 10px;
+}
+
+.p-index__mainList--item {
+  width: 32.5%;
+  border: solid $colorMainBorder 1px;
+  margin-bottom: 10px;
+  padding: 10px 0 30px;
+  background-color: $colorWhite;
+}
+
+.p-index__mainList--Company {
+  color: $colorCompany;
+  border-left: solid $colorCompany 5px;
+}
+
+.p-index__mainList--Menu {
+  color: $colorMenu;
+  border-left: solid $colorMenu 5px;
+}
+
+.p-index__mainList--News {
+  color: $colorNews;
+  border-left: solid $colorNews 5px;
+}
+
+.p-index__mainList--Recruit {
+  color: $colorRecruit;
+  border-left: solid $colorRecruit 5px;
+}
+
+.p-index__mainList--Facebook {
+  color: $colorFacebook;
+  border-left: solid $colorFacebook 5px;
+}
+
+.p-index__mainList--Contact {
+  color: $colorContact;
+  border-left: solid $colorContact 5px;
+}
+
+.p-index__mainList--Service {
+  color: $colorService;
+  border-left: solid $colorService 5px;
+}
+
+.p-index__mainList--image {
+  width: 100px;
+  display: block;
+  margin: 20px auto 0;
+}
+
+.p-index__mainList--name {
+  margin-top: 20px;
+  padding: 0 20px;
+  color: $colorMainName;
+}
+
+.p-index__mainList--text {
+  margin-top: 15px;
+  font-size: $fontsizeMainText;
+  padding: 0 20px;
+}

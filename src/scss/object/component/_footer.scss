@@ -1,0 +1,37 @@
+.c-footer__list {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid $colorOrange 2px;
+  border-bottom: dashed $colorOrange 1px;
+  padding: 20px 250px 20px;
+}
+
+.c-footer__list--item {
+  font-size: $fontsizeFooter;
+}
+
+.c-footer__list--icon {
+  width: 15px;
+}
+
+.c-footer__information {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 200px;
+}
+
+.c-footer__information--logo {
+  width: 300px;
+}
+
+.c-footer__information--icon {
+  width: 60px;
+}
+
+.c-footer__copyright {
+  background-color: $colorOrange;
+  color: $colorWhite;
+  text-align: center;
+  padding: 5px 0;
+}

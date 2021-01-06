@@ -1,0 +1,32 @@
+<footer class="l-footer">
+  <ul class="c-footer__list">
+    <% var footerItems = [
+      {name: "ホーム", link: "#"},
+      {name: "会社概要", link: "#"},
+      {name: "採用情報", link: "#"},
+      {name: "サービスメニュー", link: "#"},
+      {name: "ニュースリリース", link: "#"},
+      {name: "プライバシーポリシー", link: "#"},
+      {name: "サイトマップ", link: "#"},
+      {name: "お問い合わせ", link: "#"}
+      ]; %>
+    <% footerItems.forEach(function(footerItem){ %>
+    <li class="c-footer__list--item">
+      <a href="<%= footerItem.link %>">
+        <img class="c-footer__list--icon" src="assets/images/img/li_icon.png" alt="矢印">
+        <%= footerItem.name %>
+      </a>
+    </li>
+    <% }); %>
+  </ul>
+  <div class="c-footer__information">
+    <img class="c-footer__information--logo" src="assets/images/img/logo/logo2.png" alt="会社ロゴ">
+    <img class="c-footer__information--icon" src="assets/images/img/icon/privacy.png" alt="プライバシーアイコン">
+  </div>
+  <div class="c-footer__copyright">
+    Copyright &copy; GUPPY's lnc. All Rights Reserved.
+  </div>
+</footer>
+</div><!-- l-wrap -->
+</body>
+</html>

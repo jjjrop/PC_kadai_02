@@ -1,0 +1,35 @@
+<% var title = "TOP"; var description = "トップのdescription"; %> <% include
+src/ejs/template/_head %>
+<div class="l-index__wrapper">
+  <% include src/ejs/template/_sidebar %>
+  <main class="l-index__main">
+    <img class="p-index__mainImage" src="assets/images/img/logo/top.png" alt="メイントップ画像">
+    <ul class="p-index__mainList">
+      <% var mainItems = [
+        {name: "Company", number: "46", title: "会社概要", text: "グッピーズは、人材採用をITで革新し続ける企業です。", link: "#", alt: "メインリンク1"},
+        {name: "Menu", number: "48", title: "サービスメニュー", text: "グッピーズが提供しているOnly Oneサービスをご紹介いたします。", link: "#", alt: "メインリンク2"},
+        {name: "News", number: "50", title: "ニュースリリース", text: "グッピーズの最新ニュース、プレスリースです。", link: "#", alt: "メインリンク3"},
+        {name: "Recruit", number: "52", title: "採用情報", text: "グッピーズではNo.1を目指す環境が整っています。", link: "#", alt: "メインリンク4"},
+        {name: "Facebook", number: "54", title: "Facebokページ", text: "様々な情報をFacebookページで発信しています。", link: "#", alt: "メインリンク5"},
+        {name: "Contact", number: "56", title: "お問い合わせ", text: "サービスに関するお問い合わせはこちらから。", link: "#", alt: "メインリンク6"},
+        {name: "Service", number: "58", title: "グッピー求人", text: "医療・歯科・介護に特化した、日本で最初のNo.1求人サイト。", link: "#", alt: "メインリンク7"},
+        {name: "Service", number: "60", title: "グッピー新卒", text: "医療・歯科・介護の資格を目指す学生のための就職サイト。", link: "#", alt: "メインリンク8"},
+        {name: "Service", number: "62", title: "採用担当者の方へ", text: "人材募集で最も利用されているサービスのご利用はこちらから。", link: "#", alt: "メインリンク9"},
+        {name: "Service", number: "63", title: "転職相談", text: "グッピーの無料転職相談は、無料以上の価値があります。", link: "#", alt: "メインリンク10"},
+        {name: "Service", number: "65", title: "Dr.スポット", text: "医師のアルバイト探しは、スマホ対応のDr.スポットで簡単検索。", link: "#", alt: "メインリンク11"},
+        {name: "Service", number: "66", title: "Jinz", text: "ソーシャルリクルーティングはFacebookアプリ・Jinzで始めよう。", link: "#", alt: "メインリンク12"}
+      ] %>
+      <% mainItems.forEach(function(mainItem){ %>
+      <li class="p-index__mainList--item">
+        <a href="<%= mainItem.link %>">
+          <h2 class="p-index__mainList--<%= mainItem.name %> p-index__mainList--title">　<%= mainItem.name %></h2>
+          <img class="p-index__mainList--image" src="assets/images/img/mainmenu/icon/spr_top01_<%= mainItem.number %>.png" alt="<%= mainItem.alt %>">
+          <h3 class="p-index__mainList--name"><%= mainItem.title %></h3>
+          <p class="p-index__mainList--text"><%= mainItem.text %></p>
+        </a>
+      </li>
+      <% }); %>
+    </ul>
+  </main>
+</div>
+<% include src/ejs/template/_footer %>

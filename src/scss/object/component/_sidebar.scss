@@ -1,0 +1,39 @@
+.c-sidebar__logo {
+  padding: 50px;
+  background-color: $colorOrange;
+  border: double $colorWhite 5px;
+  display: inline-block;
+}
+
+.c-sidebar__logo--image {
+  width: 150px;
+}
+
+.c-sidebar__list {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 260px;
+  border: double $colorWhite 5px;
+  background-color: $colorOrange;
+}
+
+.c-sidebar__list--item {
+  background-color: $colorOrange;
+  border-right: dashed 1px $colorWhite;
+  border-top: dashed 1px $colorWhite;
+  width: 33%;
+  &:nth-child(3n) {
+    border-right: none;
+  }
+  &:nth-child(-n+3) {
+    border-top: none;
+  }
+}
+
+.c-sidebar__snsList {
+  display: flex;
+  margin-top: 30px;
+  justify-content: center;
+}

@@ -1,0 +1,40 @@
+<aside class="l-sidebar">
+  <div class="c-sidebar__logo">
+    <img class="c-sidebar__logo--image" src="assets/images/img/logo/logo1.png" alt="サイドバーロゴ">
+  </div>
+  <ul class="c-sidebar__list">
+    <% var sidebaritems = [
+      {number: "01", link: "#", name: "サイドバーリンク1"},
+      {number: "03", link: "#", name: "サイドバーリンク2"},
+      {number: "05", link: "#", name: "サイドバーリンク4"},
+      {number: "07", link: "#", name: "サイドバーリンク5"},
+      {number: "09", link: "#", name: "サイドバーリンク6"},
+      {number: "11", link: "#", name: "サイドバーリンク7"},
+      {number: "13", link: "#", name: "サイドバーリンク8"},
+      {number: "15", link: "#", name: "サイドバーリンク9"},
+      {number: "17", link: "#", name: "サイドバーリンク10"},
+      {number: "19", link: "#", name: "サイドバーリンク11"},
+      {number: "21", link: "#", name: "サイドバーリンク12"},
+      {number: "23", link: "#", name: "サイドバーリンク13"}
+    ]; %>
+    <% sidebaritems.forEach(function(sidebaritem) { %>
+    <li class="c-sidebar__list--item">
+      <a href="<%= sidebaritem.link %>">
+        <img class="c-sidebar__list--icon" src="assets/images/img/sidemenu/icon/spr_gnav_pc_<%= sidebaritem.number %>.png" alt="<%= sidebaritem.name %>">
+      </a>
+    </li>
+    <% }); %>
+  </ul>
+  <ul class="c-sidebar__snsList">
+    <li class="c-sidebar__snsList--item">
+      <a href="#">
+        <img src="assets/images/img/icon/twitter.png" alt="ツイッターアイコン">
+      </a>
+    </li>
+    <li class="c-sidebar__snsList--item">
+      <a href="#">
+        <img src="assets/images/img/icon/facebook.png" alt="フェイスブックアイコン">
+      </a>
+    </li>
+  </ul>
+</aside>
